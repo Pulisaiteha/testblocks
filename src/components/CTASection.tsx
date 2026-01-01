@@ -60,12 +60,12 @@ const CTASection = () => {
                shadow-xl p-4 w-64 z-50"
   >
     <p className="text-sm text-muted-foreground mb-2">
-      📧 <span className="font-medium text-foreground">
+       <span className="font-medium text-foreground">
         saitejapuli544@gmail.com
       </span>
     </p>
     <p className="text-sm text-muted-foreground">
-      📞 <span className="font-medium text-foreground">
+       <span className="font-medium text-foreground">
         +91-6309375684
       </span>
     </p>
@@ -85,10 +85,10 @@ const CTASection = () => {
                   bg-background border border-border rounded-lg
                   shadow-lg p-4 w-64 z-50">
     <p className="text-sm text-muted-foreground mb-2">
-      📧 <span className="font-medium text-foreground">saitejapuli544@gmail.com</span>
+       <span className="font-medium text-foreground">saitejapuli544@gmail.com</span>
     </p>
     <p className="text-sm text-muted-foreground">
-      📞 <span className="font-medium text-foreground">+91-6309375684</span>
+       <span className="font-medium text-foreground">+91-6309375684</span>
     </p>
   </div>
 </div>
