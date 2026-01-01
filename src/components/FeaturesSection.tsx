@@ -146,7 +146,7 @@ const FeaturesSection = () => {
             <span className="text-muted-foreground text-2xl hidden sm:block">→</span>
             <span className="text-muted-foreground text-2xl sm:hidden">↓</span>
             <div className="glass-card px-6 py-4 text-center border-accent/50">
-              <span className="text-accent font-bold text-lg">Logs & Reports</span>
+              <span className="text-accent font-bold text-lg">Logs, Reports & ScreenShots</span>
             </div>
           </div>
         </div>

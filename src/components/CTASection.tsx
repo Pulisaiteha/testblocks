@@ -27,12 +27,12 @@ const CTASection = () => {
             
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 px-4">
               Join hundreds of teams who have already made the switch to no-code automation. 
-              Start your free trial today — no credit card required.
+              Start your free trial today — no cost.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="xl" className="w-full sm:w-auto group">
-                Start Free Trial
+                Start Free
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
@@ -41,7 +41,7 @@ const CTASection = () => {
             </div>
             
             <p className="mt-6 text-xs sm:text-sm text-muted-foreground">
-              14-day free trial • No credit card required • Cancel anytime
+              free trial • No cost • Cancel anytime
             </p>
           </div>
         </div>

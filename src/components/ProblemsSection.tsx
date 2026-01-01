@@ -48,7 +48,7 @@ const ProblemsSection = () => {
             <span className="text-destructive"> Broken</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground px-4">
-            The current tools were built for developers, not QA teams. 
+            The current tools were built for developers, makes difficult for QA teams. 
             This creates massive barriers to automation adoption.
           </p>
         </div>

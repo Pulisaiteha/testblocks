@@ -39,7 +39,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 sm:mb-16 animate-slide-up opacity-0 animate-delay-300 px-4">
             <Button variant="hero" size="xl" className="w-full sm:w-auto group">
-              Start Free Trial
+              Start Free
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroOutline" size="xl" className="w-full sm:w-auto group">

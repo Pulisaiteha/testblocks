@@ -4,8 +4,8 @@ const competitors = ["mabl", "Leapwork", "Testim", "Katalon"];
 
 const comparisons = [
   {
-    feature: "Starting Price",
-    blockqa: "$60/mo",
+    feature: "No Price",
+    blockqa: "$0/mo",
     competitors: ["$400+/mo", "$2000+/mo", "$450+/mo", "$200+/mo"],
   },
   {
@@ -79,7 +79,7 @@ const ComparisonTable = () => {
             Comparison
           </span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-            See How We
+            See How Test Blocks
             <span className="gradient-text-accent"> Stack Up</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground px-4">
@@ -98,7 +98,7 @@ const ComparisonTable = () => {
                     <th className="p-4 sm:p-6 text-center">
                       <div className="inline-flex flex-col items-center">
                         <span className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-sm sm:text-base">
-                          BlockQA
+                          Test Blocks
                         </span>
                       </div>
                     </th>
@@ -152,7 +152,7 @@ const ComparisonTable = () => {
               <h3 className="font-display font-semibold text-base mb-3">{row.feature}</h3>
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-primary/10 border border-primary/20 rounded-lg p-3">
-                  <span className="text-xs text-primary font-medium block mb-1">BlockQA</span>
+                  <span className="text-xs text-primary font-medium block mb-1">Test Blocks</span>
                   {row.isBoolean ? (
                     row.blockqaBool ? (
                       <Check className="w-5 h-5 text-accent" />

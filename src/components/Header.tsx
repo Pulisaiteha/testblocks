@@ -12,7 +12,13 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2 sm:gap-3">
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Blocks className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
+              {/* <Blocks className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" /> */}
+              <img
+  src="/mylogo.jpeg"
+  alt="Test Blocks Logo"
+  className="w-full h-full object-contain"
+/>
+
             </div>
             <span className="font-display font-bold text-lg sm:text-xl text-foreground">
               Test Blocks
@@ -38,7 +44,7 @@ const Header = () => {
               Sign In
             </Button>
             <Button variant="hero" size="sm">
-              Start Free Trial
+              Start Free
             </Button>
           </div>
 
@@ -69,7 +75,7 @@ const Header = () => {
                   Sign In
                 </Button>
                 <Button variant="hero" size="sm" className="justify-center">
-                  Start Free Trial
+                  Start Free
                 </Button>
               </div>
             </nav>

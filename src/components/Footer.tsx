@@ -9,7 +9,12 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <Blocks className="w-5 h-5 text-primary-foreground" />
+                {/* <Blocks className="w-5 h-5 text-primary-foreground" /> */}
+                <img
+  src="/mylogo.jpeg"
+  alt="Test Blocks Logo"
+  className="w-full h-full object-contain"
+/>
               </div>
               <span className="font-display font-bold text-xl text-foreground">
                 Test Blocks
@@ -20,10 +25,10 @@ const Footer = () => {
             </p>
             <div className="mt-4 space-y-2">
               <p className="text-sm text-muted-foreground font-medium">Puli Sai Teja</p>
-              <p className="text-xs text-muted-foreground">Founder – Automation QA Engineer</p>
+              <p className="text-xs text-muted-foreground">Founder – Automation QA Engineer & Product Engineer</p>
             </div>
             <div className="flex items-center gap-4 mt-4">
-              <a href="https://linkedin.com/in/testblocks" className="text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/pulisaiteja/" className="text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:saitejapuli544@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
@@ -62,7 +67,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-sm mb-4">Company</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Careers</a></li>
+              {/* <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Careers</a></li> */}
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a></li>
             </ul>
