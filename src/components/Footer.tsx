@@ -1,4 +1,4 @@
-import { Blocks, Github, Twitter, Linkedin } from "lucide-react";
+import { Blocks, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,21 +12,25 @@ const Footer = () => {
                 <Blocks className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="font-display font-bold text-xl text-foreground">
-                BlockQA
+                Test Blocks
               </span>
             </div>
             <p className="text-sm text-muted-foreground mb-4 max-w-xs">
               No-code QA automation that empowers everyone to test smarter, faster, and cheaper.
             </p>
-            <div className="flex items-center gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <div className="mt-4 space-y-2">
+              <p className="text-sm text-muted-foreground font-medium">Puli Sai Teja</p>
+              <p className="text-xs text-muted-foreground">Founder – Automation QA Engineer</p>
+            </div>
+            <div className="flex items-center gap-4 mt-4">
+              <a href="https://linkedin.com/in/testblocks" className="text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="mailto:saitejapuli544@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-5 h-5" />
+              </a>
+              <a href="tel:6309375684" className="text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -67,10 +71,10 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
-            © 2026 BlockQA. All rights reserved.
+            © 2026 Test Blocks. All rights reserved.
           </p>
           <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-right">
-            Built with Blockly & Playwright
+            Built with Google Blockly & Microsoft Playwright
           </p>
         </div>
       </div>

@@ -2,24 +2,24 @@ import { AlertTriangle, Code2, DollarSign, Clock, GraduationCap, Wrench } from "
 
 const problems = [
   {
-    icon: Code2,
-    title: "Programming Required",
-    description: "Selenium, Playwright, Cypress all require JavaScript, Python, or Java knowledge",
+    icon: Clock,
+    title: "Repetitive & Time-Consuming",
+    description: "Manual testing is repetitive and takes far too long, slowing down releases",
   },
   {
     icon: GraduationCap,
     title: "Steep Learning Curve",
-    description: "Manual testers and freshers struggle with complex automation frameworks",
+    description: "Selenium, Playwright, Java, JavaScript & Python require months to learn",
+  },
+  {
+    icon: Code2,
+    title: "Coding Errors",
+    description: "High chance of human errors and time-consuming to identify and resolve coding issues",
   },
   {
     icon: DollarSign,
     title: "Expensive Experts",
     description: "Companies need to hire costly automation engineers for basic testing",
-  },
-  {
-    icon: Clock,
-    title: "Slow Adoption",
-    description: "Teams take weeks or months to start automating their first test",
   },
   {
     icon: Wrench,

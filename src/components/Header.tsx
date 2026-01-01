@@ -15,7 +15,7 @@ const Header = () => {
               <Blocks className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
             </div>
             <span className="font-display font-bold text-lg sm:text-xl text-foreground">
-              BlockQA
+              Test Blocks
             </span>
           </div>
 
