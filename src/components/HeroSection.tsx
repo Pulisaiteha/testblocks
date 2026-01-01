@@ -42,10 +42,26 @@ const HeroSection = () => {
               Start Free
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="heroOutline" size="xl" className="w-full sm:w-auto group">
+            {/* <Button variant="heroOutline" size="xl" className="w-full sm:w-auto group">
               <Play className="w-5 h-5" />
               Watch Demo
-            </Button>
+            </Button> */}
+            <Button
+  variant="heroOutline"
+  size="xl"
+  className="w-full sm:w-auto group"
+  asChild
+>
+  <a
+    href="https://www.linkedin.com/posts/activity-7410884683602993152-V4pN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1ZRxwBBokwN8uzf_eOaAuo3CB2tg3sXFE"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Play className="w-5 h-5 mr-2" />
+    Watch Demo
+  </a>
+</Button>
+
           </div>
 
           {/* Stats */}
@@ -53,14 +69,14 @@ const HeroSection = () => {
             <div className="glass-card p-4 sm:p-6 glow-effect">
               <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2">
                 <Clock className="w-5 h-5 text-primary" />
-                <span className="text-2xl sm:text-3xl font-display font-bold gradient-text">70%</span>
+                <span className="text-2xl sm:text-3xl font-display font-bold gradient-text">100%</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground">Faster Test Creation</p>
             </div>
             <div className="glass-card p-4 sm:p-6 glow-effect">
               <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2">
                 <Users className="w-5 h-5 text-accent" />
-                <span className="text-2xl sm:text-3xl font-display font-bold gradient-text-accent">80%</span>
+                <span className="text-2xl sm:text-3xl font-display font-bold gradient-text-accent">100%</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground">Cost Savings</p>
             </div>

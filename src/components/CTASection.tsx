@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Blocks } from "lucide-react";
 
+
 const CTASection = () => {
   return (
     <section className="py-16 sm:py-24 relative overflow-hidden">
@@ -31,13 +32,67 @@ const CTASection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button variant="hero" size="xl" className="w-full sm:w-auto group">
+              {/* <Button variant="hero" size="xl" className="w-full sm:w-auto group">
                 Start Free
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                Schedule Demo
-              </Button>
+              </Button> */}
+                   <div className="relative group w-full sm:w-auto">
+  {/* Highlighted CTA */}
+  <div
+    className="flex items-center justify-center gap-2
+               px-8 py-4 rounded-xl
+               bg-gradient-to-r from-primary to-accent
+               text-primary-foreground font-semibold text-lg
+               shadow-lg shadow-primary/30
+               cursor-pointer
+               transition-all duration-300
+               hover:scale-105 hover:shadow-accent/40"
+  >
+    Start FREE
+    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+  </div>
+
+  {/* Hover Contact Card */}
+  <div
+    className="absolute left-1/2 -translate-x-1/2 top-full mt-3
+               hidden group-hover:block
+               bg-background border border-border rounded-lg
+               shadow-xl p-4 w-64 z-50"
+  >
+    <p className="text-sm text-muted-foreground mb-2">
+      📧 <span className="font-medium text-foreground">
+        saitejapuli544@gmail.com
+      </span>
+    </p>
+    <p className="text-sm text-muted-foreground">
+      📞 <span className="font-medium text-foreground">
+        +91-6309375684
+      </span>
+    </p>
+  </div>
+</div>
+
+              
+              
+              <div className="relative group w-full sm:w-auto">
+  <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+    Schedule Demo
+  </Button>
+
+  {/* Hover Card */}
+  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-3
+                  hidden group-hover:block
+                  bg-background border border-border rounded-lg
+                  shadow-lg p-4 w-64 z-50">
+    <p className="text-sm text-muted-foreground mb-2">
+      📧 <span className="font-medium text-foreground">saitejapuli544@gmail.com</span>
+    </p>
+    <p className="text-sm text-muted-foreground">
+      📞 <span className="font-medium text-foreground">+91-6309375684</span>
+    </p>
+  </div>
+</div>
+
             </div>
             
             <p className="mt-6 text-xs sm:text-sm text-muted-foreground">

@@ -6,49 +6,85 @@ const blockCategories = [
     title: "Core Actions",
     description: "Essential blocks like Open URL, Click, Type, and Wait. The most commonly used actions for any test.",
     color: "bg-[hsl(142,50%,35%)]",
+    image:"./features/core.png"
   },
   {
     icon: Navigation,
     title: "Navigation Blocks",
     description: "Go Back, Go Forward, Reload Page - simple navigation controls at your fingertips.",
     color: "bg-[hsl(270,50%,50%)]",
+    image:"./features/navigations.png"
   },
   {
     icon: MousePointerClick,
     title: "Element Actions",
     description: "Select, Check, Uncheck, Hover, Right-click, Double-click - interact with any element easily.",
     color: "bg-[hsl(320,50%,45%)]",
+    image:"./features/actions.png"
   },
   {
     icon: CheckCircle,
     title: "Assertions",
     description: "Assert Text, Assert URL, Assert Element visibility - validate your tests with simple blocks.",
     color: "bg-[hsl(0,40%,45%)]",
+    image:"./features/assertions.png"
   },
   {
     icon: Keyboard,
     title: "Keyboard Actions",
     description: "Press any key - Enter, Tab, Escape, Arrow keys and more. Full keyboard control.",
     color: "bg-[hsl(175,50%,35%)]",
+    image:"./features/keyboard.png"
   },
   {
     icon: Settings,
     title: "Utility Actions",
     description: "Take Screenshots, Set Values, Clear Inputs, Get Text, Wait for Elements.",
     color: "bg-[hsl(220,50%,45%)]",
+    image:"./features/utilityactions.png"
   },
   {
     icon: Code,
     title: "Custom Python Block",
     description: "Need complex logic? Insert Python code directly for advanced scenarios - best of both worlds.",
     color: "bg-[hsl(25,50%,45%)]",
+    image:"./features/custom.png"
   },
   {
     icon: FileText,
     title: "Detailed Logs",
     description: "Real-time execution logs with timestamps. Easy debugging and step-by-step visibility.",
     color: "bg-[hsl(200,50%,40%)]",
+    image:"./features/file.png"
   },
+  {
+  icon: Code,
+  title: "Generated Code",
+  description:
+    "Playwright code is automatically generated as you drag and drop blocks. The generated code can be downloaded, edited in VS Code, and executed based on QA requirements without any manual rewriting.",
+  color: "bg-[hsl(210,60%,45%)]",
+  image: "/features/generatedcode.png",
+},
+
+{
+  icon: FileText,
+  title: "Execution Logs",
+  description:
+    "Detailed logs are automatically generated during execution. Each block’s action is logged step by step, making it easy to track execution flow, identify failures, and debug issues quickly.",
+  color: "bg-[hsl(35,70%,45%)]",
+  image: "/features/logs.png",
+},
+{
+  icon: Settings,
+  title: "Execution Mode",
+  description:
+    "Run tests in both headed and headless modes using a simple execution block. Users can visually see the test execution in headed mode or run faster headless executions based on their testing needs.",
+  color: "bg-[hsl(160,55%,40%)]",
+  image: "/features/execution.png",
+}
+
+
+
 ];
 
 const highlights = [
@@ -84,25 +120,45 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        {/* Block Categories Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-12 sm:mb-16">
-          {blockCategories.map((category, index) => (
-            <div 
-              key={index}
-              className="glass-card p-5 sm:p-6 group glow-effect hover:scale-[1.02] transition-all duration-300"
-            >
-              <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg ${category.color} flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform`}>
-                <category.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <h3 className="font-display text-base sm:text-lg font-semibold mb-2">
-                {category.title}
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                {category.description}
-              </p>
-            </div>
-          ))}
+        <div className="max-w-6xl mx-auto space-y-16 mb-12 sm:mb-16">
+  {blockCategories.map((category, index) => (
+    <div
+      key={index}
+      className={`flex flex-col ${
+        index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+      } items-center gap-8`}
+    >
+      {/* IMAGE */}
+      <div className="w-full lg:w-1/2">
+        <img
+          src={category.image}
+          alt={category.title}
+          className="w-full rounded-xl shadow-lg"
+        />
+      </div>
+
+      {/* EXISTING CARD (UNCHANGED) */}
+      <div className="glass-card p-5 sm:p-6 w-full lg:w-1/2">
+        <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg ${category.color} flex items-center justify-center mb-3 sm:mb-4`}>
+          <category.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
         </div>
+        <h3 className="font-display text-base sm:text-lg font-semibold mb-2 flex items-center gap-2">
+  <span
+    className={`px-2 py-0.5 rounded-md text-white ${category.color}`}
+  >
+    {category.title}
+  </span>
+</h3>
+
+
+        <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+          {category.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         {/* Highlights */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
