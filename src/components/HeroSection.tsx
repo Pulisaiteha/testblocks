@@ -32,8 +32,8 @@ const HeroSection = () => {
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 sm:mb-10 animate-slide-up opacity-0 animate-delay-200 px-4">
-            Empower your QA team with visual, block-based automation. 
-            Built on Playwright. Designed for everyone.
+            Automate repetitive testing tasks easily without coding in less time. 
+            Built on Google Blockly & Microsoft Playwright.
           </p>
 
           {/* CTA Buttons */}
